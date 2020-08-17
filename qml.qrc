@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>view/Header.qml</file>
+        <file>system/Actions.qml</file>
+        <file>system/System.qml</file>
+        <file>view/Box.qml</file>
+        <file>view/controls/Text.qml</file>
+        <file>view/Style.qml</file>
+        <file>view/controls/SetButton.qml</file>
+        <file>view/controls/InfoText.qml</file>
+        <file>view/pages/page0/Page0.qml</file>
+        <file>view/pages/page1/Page1.qml</file>
+        <file>view/pages/page2/Page2.qml</file>
+        <file>view/pages/page3/Page3.qml</file>
+        <file>view/pages/page4/Page4.qml</file>
+        <file>view/pages/page1/Light1Area.qml</file>
+        <file>view/controls/Slider.qml</file>
+        <file>system/Initializer.qml</file>
+        <file>view/SwipeViewApp.qml</file>
+        <file>view/pages/page1/Light2Area.qml</file>
+        <file>view/ViewLoader.qml</file>
+        <file>view/pages/page1/Light3Area.qml</file>
+        <file>view/controls/RangeSlider.qml</file>
+        <file>view/pages/page4/Pump1Area.qml</file>
+        <file>view/pages/page4/Pump2Area.qml</file>
+        <file>view/pages/page4/Pump3Area.qml</file>
+        <file>view/pages/page4/Pump4Area.qml</file>
+        <file>view/pages/page4/Pump5Area.qml</file>
+        <file>view/pages/page4/ManualPopup.qml</file>
+        <file>view/controls/SliderVertical.qml</file>
+        <file>view/pages/page5/Page5.qml</file>
+        <file>view/pages/page3/WaterPump1Area.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" name="sm" qt:editorversion="4.9.1" initial="Init">
+    <qt:editorinfo initialGeometry="-205;401.87;-20;-20;40;40"/>
+    <parallel id="Operational">
+        <qt:editorinfo scenegeometry="107.83;218.72;12.76;41.27;1543.59;1221.37" geometry="107.83;218.72;-95.07;-177.45;1543.59;1221.37"/>
+        <state id="WorkingStatus">
+            <qt:editorinfo scenegeometry="147.22;304.76;93.16;154.55;1433.64;1088.09" geometry="39.39;86.04;-54.06;-150.21;1433.64;1088.09"/>
+            <state id="MainView">
+                <qt:editorinfo scenegeometry="215.28;368.37;155.28;318.37;196.43;153.46" geometry="68.06;63.61;-60;-50;196.43;153.46"/>
+                <transition type="internal" event="goLightView" target="LightView">
+                    <qt:editorinfo movePoint="7.56;1.05" startTargetFactors="94.37;48.01" endTargetFactors="7.21;43.34"/>
+                </transition>
+                <transition type="internal" event="goSettingsView" target="SettingsView">
+                    <qt:editorinfo movePoint="-59.55;67.15" startTargetFactors="35.59;94.27" endTargetFactors="27.64;6.29"/>
+                </transition>
+            </state>
+            <state id="LightView">
+                <qt:editorinfo scenegeometry="496.44;363.27;393.21;259.84;255.32;296.67" geometry="349.22;58.51;-103.23;-103.43;255.32;296.67"/>
+                <transition type="internal" event="goWaterTemperatureView" target="WaterTemperatureView">
+                    <qt:editorinfo movePoint="4.75;7.91" startTargetFactors="92.95;40.46" endTargetFactors="5.14;37.08"/>
+                </transition>
+                <state id="LightView1">
+                    <qt:editorinfo scenegeometry="473.21;367.71;436.66;317.71;125.03;100" geometry="-23.23;4.44;-36.55;-50;125.03;100"/>
+                    <transition type="internal" event="swipeDown" target="LightView2">
+                        <qt:editorinfo movePoint="-47.50;5.74" startTargetFactors="28.20;89.70" endTargetFactors="32.93;10.29"/>
+                    </transition>
+                </state>
+                <state id="LightView2">
+                    <qt:editorinfo scenegeometry="476.91;482.46;436.57;432.46;125.03;100" geometry="-19.53;119.19;-40.34;-50;125.03;100"/>
+                    <transition type="internal" event="swipeUp" target="LightView1">
+                        <qt:editorinfo movePoint="63.55;7.40" startTargetFactors="56.35;12.55" endTargetFactors="55.21;73.93"/>
+                    </transition>
+                </state>
+            </state>
+            <state id="WaterTemperatureView">
+                <qt:editorinfo scenegeometry="844.36;371.80;784.36;321.80;227.92;154.19" geometry="697.14;67.04;-60;-50;227.92;154.19"/>
+                <transition type="internal" event="goLightView" target="LightView">
+                    <qt:editorinfo movePoint="3.96;7.91" startTargetFactors="3.66;92.16" endTargetFactors="92.86;67.34"/>
+                </transition>
+                <transition type="internal" event="goWaterPumpView" target="WaterPumpView">
+                    <qt:editorinfo startTargetFactors="95.01;42.92" endTargetFactors="10.80;41.24"/>
+                </transition>
+            </state>
+            <state id="PumpsView">
+                <qt:editorinfo scenegeometry="1282.39;775.15;1124.23;503.86;371.54;718.78" geometry="1135.17;470.39;-158.16;-271.29;371.54;718.78"/>
+                <transition type="internal" event="goWaterPumpView" target="WaterPumpView">
+                    <qt:editorinfo movePoint="96.62;1.13" startTargetFactors="61.71;1.90" endTargetFactors="72.22;89.58"/>
+                </transition>
+                <state id="PumpView1">
+                    <qt:editorinfo scenegeometry="1306.39;636.99;1269.84;586.99;125.03;100" geometry="24;-138.16;-36.55;-50;125.03;100"/>
+                    <transition type="internal" event="swipeDown" target="PumpView2">
+                        <qt:editorinfo movePoint="-51.27;-6.31" startTargetFactors="23.87;90.11" endTargetFactors="19.51;8.35"/>
+                    </transition>
+                </state>
+                <state id="PumpView4">
+                    <qt:editorinfo scenegeometry="1295.84;1015.64;1264.32;965.64;120;100" geometry="13.45;240.49;-31.52;-50;120;100"/>
+                    <transition type="internal" event="swipeDown" target="PumpView5">
+                        <qt:editorinfo movePoint="-67.14;5.87"/>
+                    </transition>
+                    <transition type="internal" event="swipeUp" target="PumpView3">
+                        <qt:editorinfo movePoint="76.51;10.25" endTargetFactors="72.04;75.15"/>
+                    </transition>
+                </state>
+                <state id="PumpView5">
+                    <qt:editorinfo scenegeometry="1299.06;1151.06;1259.82;1101.06;127.72;100" geometry="16.67;375.91;-39.24;-50;127.72;100"/>
+                    <transition type="internal" event="swipeUp" target="PumpView4">
+                        <qt:editorinfo movePoint="71.71;1.96" startTargetFactors="73.48;9.30"/>
+                    </transition>
+                </state>
+                <state id="PumpView2">
+                    <qt:editorinfo scenegeometry="1336.11;779.27;1276.11;729.27;120;100" geometry="53.72;4.12;-60;-50;120;100"/>
+                    <transition type="internal" event="swipeDown" target="PumpView3">
+                        <qt:editorinfo movePoint="-78.87;0" startTargetFactors="31.19;89.42" endTargetFactors="26.22;40.48"/>
+                    </transition>
+                    <transition type="internal" event="swipeUp" target="PumpView1">
+                        <qt:editorinfo movePoint="69.41;7.10" endTargetFactors="63.28;80.86"/>
+                    </transition>
+                </state>
+                <state id="PumpView3">
+                    <qt:editorinfo scenegeometry="1336.89;899.94;1276.89;849.94;120;100" geometry="54.50;124.79;-60;-50;120;100"/>
+                    <transition type="internal" event="swipeDown" target="PumpView4">
+                        <qt:editorinfo movePoint="-97.81;7.10"/>
+                    </transition>
+                    <transition type="internal" event="swipeUp" target="PumpView2">
+                        <qt:editorinfo movePoint="60.73;10.25" endTargetFactors="65.65;73.79"/>
+                    </transition>
+                </state>
+                <transition type="internal" event="goPHView" target="PHView">
+                    <qt:editorinfo startTargetFactors="4.27;82.07" movePoint="4.61;9.22" endTargetFactors="89.91;40.60"/>
+                </transition>
+            </state>
+            <state id="WaterPumpView">
+                <qt:editorinfo scenegeometry="1290.74;377.99;1230.74;327.99;167.88;146.30" geometry="1143.52;73.23;-60;-50;167.88;146.30"/>
+                <transition type="internal" event="goWaterTemperatureView" target="WaterTemperatureView">
+                    <qt:editorinfo movePoint="9.21;16.98" startTargetFactors="7.73;75.61" endTargetFactors="84.53;74.47"/>
+                </transition>
+                <transition type="internal" event="goPumpsView" target="PumpsView">
+                    <qt:editorinfo movePoint="-61.72;9.99" startTargetFactors="26.89;92.55" endTargetFactors="40.91;1.35"/>
+                </transition>
+            </state>
+            <state id="SettingsView">
+                <qt:editorinfo scenegeometry="228.77;662.05;133.98;666.22;331.22;156.09" geometry="81.55;357.29;-94.79;4.17;331.22;156.09"/>
+                <transition type="internal" event="goMainView" target="MainView">
+                    <qt:editorinfo movePoint="71.25;88.28" endTargetFactors="73.52;90.83"/>
+                </transition>
+            </state>
+            <transition type="internal" event="goMainView" target="MainView">
+                <qt:editorinfo movePoint="76.64;84.72" startTargetFactors="16.45;39.17" endTargetFactors="87.10;94.33"/>
+            </transition>
+            <state id="PHView">
+                <qt:editorinfo scenegeometry="883.77;1073.55;823.77;1023.55;210.06;178.10" geometry="736.55;768.79;-60;-50;210.06;178.10"/>
+                <transition type="internal" event="goPumpsView" target="PumpsView">
+                    <qt:editorinfo startTargetFactors="95.41;86.91" movePoint="6.15;-0" endTargetFactors="3.83;93.47"/>
+                </transition>
+            </state>
+        </state>
+    </parallel>
+    <state id="Init">
+        <qt:editorinfo scenegeometry="-205;483.38;-265;433.38;120;100" geometry="-205;483.38;-60;-50;120;100"/>
+        <transition type="external" event="initDone" target="Operational">
+            <qt:editorinfo endTargetFactors="0.92;36.11"/>
+        </transition>
+    </state>
+</scxml>
